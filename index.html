@@ -15,21 +15,34 @@
   <body>
     <div class="whole-weather">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-city">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-submit" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Paris</h1>
-          <p>
-            Wednesday 10:35, mist
-            <br />
-            Humidity: 92%, Wind: 5.66km/h
-          </p>
+        <div class="Weather-data">
+          <div>
+            <h1 class="city">Paris</h1>
+            <p class="details">
+              Wednesday <span class="number">10:35</span>, mist
+              <br />
+              Humidity: <span class="number">92%</span>, Wind:
+              <span class="number">5.66km/h</span>
+            </p>
+          </div>
+
+          <div class="Weather-temp">
+            <div class="icon">🌤️</div>
+            <div class="temp">15</div>
+            <div class="unit">°C</div>
+          </div>
         </div>
-        <div>🌤️ 15°C</div>
       </main>
       <footer>
         <p>
