@@ -15,20 +15,26 @@
   <body>
     <div class="whole-weather">
       <header>
-        <form class="search-city">
+        <form class="search-city" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
             class="search-form-input"
+            id="search-form-input"
           />
-          <input type="submit" value="Search" class="search-form-submit" />
+          <input
+            type="submit"
+            value="Search"
+            class="search-form-submit"
+            id="search-form-submit"
+          />
         </form>
       </header>
       <main>
         <div class="Weather-data">
           <div>
-            <h1 class="city">Paris</h1>
+            <h1 class="city" id="main-city">Paris</h1>
             <p class="details">
               Wednesday <span class="number">10:35</span>, mist
               <br />
@@ -59,5 +65,6 @@
         </p>
       </footer>
     </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
